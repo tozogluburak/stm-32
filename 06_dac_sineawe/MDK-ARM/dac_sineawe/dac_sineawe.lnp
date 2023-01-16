@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"dac_sineawe\startup_stm32f407xx.o"
+"dac_sineawe\main.o"
+"dac_sineawe\stm32f4xx_it.o"
+"dac_sineawe\stm32f4xx_hal_msp.o"
+"dac_sineawe\stm32f4xx_hal_dac.o"
+"dac_sineawe\stm32f4xx_hal_dac_ex.o"
+"dac_sineawe\stm32f4xx_hal_rcc.o"
+"dac_sineawe\stm32f4xx_hal_rcc_ex.o"
+"dac_sineawe\stm32f4xx_hal_flash.o"
+"dac_sineawe\stm32f4xx_hal_flash_ex.o"
+"dac_sineawe\stm32f4xx_hal_flash_ramfunc.o"
+"dac_sineawe\stm32f4xx_hal_gpio.o"
+"dac_sineawe\stm32f4xx_hal_dma_ex.o"
+"dac_sineawe\stm32f4xx_hal_dma.o"
+"dac_sineawe\stm32f4xx_hal_pwr.o"
+"dac_sineawe\stm32f4xx_hal_pwr_ex.o"
+"dac_sineawe\stm32f4xx_hal_cortex.o"
+"dac_sineawe\stm32f4xx_hal.o"
+"dac_sineawe\stm32f4xx_hal_exti.o"
+"dac_sineawe\stm32f4xx_hal_tim.o"
+"dac_sineawe\stm32f4xx_hal_tim_ex.o"
+"dac_sineawe\system_stm32f4xx.o"
+--strict --scatter "dac_sineawe\dac_sineawe.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dac_sineawe.map" -o dac_sineawe\dac_sineawe.axf
